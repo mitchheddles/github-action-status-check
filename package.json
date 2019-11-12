@@ -6,9 +6,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mitch Heddles <mitchell.heddles@gmail.com>",
-  "keywords": ["action", "status", "bundlesize"],
+  "keywords": [
+    "action",
+    "status",
+    "bundlesize"
+  ],
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "fast-glob": "^3.1.0",
     "gzip-size": "^5.1.1",
     "node-fetch": "^2.6.0"
