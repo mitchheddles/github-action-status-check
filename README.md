@@ -51,7 +51,7 @@ module.exports = {
 
 ## Bundle Size Example
 
-This package includes a simple bundle size status check that can measure the gzip size of JS files.
+This package includes a simple bundle size status check that can measure the gzip size of files for given patterrns.
 
 It lets you set limits on bundles and pass/fail PRs based on their size.
 
