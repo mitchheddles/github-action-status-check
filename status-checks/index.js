@@ -39,13 +39,14 @@ async function setStatus(context, state, description) {
     checks.map(async check => {
       const { name, callback } = check;
 
-      setStatus(name, 'pending', 'Running check..');
+      await setStatus(name, 'pending', 'Running check..');
 
       try {
         const response = await callback();
-        setStatus(name, 'success', response);
+        await setStatus(name, 'success', response);
       } catch (err) {
-        setStatus(name, 'failure', err.message);
+        const message = err ? err.message : 'Something went wrong';
+        await setStatus(name, 'failure', message);
       }
     }),
   );
