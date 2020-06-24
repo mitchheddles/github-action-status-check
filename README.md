@@ -29,6 +29,7 @@ module.exports = {
 }
 ```
 
+
 Add the check to the action by adding it to the `check` list in `src/checks`.
 
 #### Passing
